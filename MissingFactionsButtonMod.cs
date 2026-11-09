@@ -68,7 +68,7 @@ namespace MissingFactionsButton
             float num = rect.width * 0.0500000119f;
             float num2 = Text.LineHeight + 4f;
 
-            // Use the warning height 
+            // Warning height 
 
             Rect rect3 = new Rect(
                 rect.x + num,
@@ -90,7 +90,7 @@ namespace MissingFactionsButton
                 }
             }
 
-            // ADD MISSING FACTIONS button
+            // "Add missing faction" button
 
             float originalAddY = Mathf.Min(
                 rect3.yMax,
@@ -185,7 +185,7 @@ namespace MissingFactionsButton
         public static void RandomizeFactions(
             List<FactionDef> factions)
         {
-            // Remove removable factions. Mandatory stay as-is
+            // Remove removable factions. Mandatory stay as-is - hidden factions, ignore mod restrictions
 
             for (int i = factions.Count - 1; i >= 0; i--)
             {
